@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.main-box .main-title{
+    text-transform: capitalize;
+    text-align: center;
+    width: 100%;
+}
+.inner-main-boxe{
+    display: flex;
+    justify-content: center;
+}
+.main-box .box-1{
+    width: 30%;
+    border: 1px solid black;
+    background-color: grey;  
+}
+.main-box .box-1 .box-title{
+    text-align: right;
+}
+.main-box .box-1 .box-title h4{
+    background: red;
+    padding: 0 20px;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 0;
+}
+.main-box .box-1 p{
+    padding: 0 10px;
+}
+.main-box .box-2{
+    width: 30%;
+    margin: 0 20px;
+    border: 1px solid black;
+    background-color: #808080;  
+}
+.main-box .box-2 .box-title{
+    text-align: right;
+}
+.main-box .box-2 .box-title h4{
+    background: green;
+    padding: 0 20px;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 0;
+}
+.main-box .box-2 p{
+    padding: 0 10px;
+}
+.main-box .box-3{
+    width: 30%;
+    border: 1px solid black;
+    background-color: #808080;  
+}
+.main-box .box-3 .box-title{
+    text-align: right;
+}
+.main-box .box-3 .box-title h4{
+    background: yellow;
+    padding: 0 20px;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 0;
+}
+.main-box .box-3  p{
+    padding: 0 10px;
+}
+
+/* // Responsive // */
+
+@media (max-width: 991px){
+    .inner-main-boxe{
+        flex-flow: wrap;
+        justify-content: space-around;
+    }
+    .main-box .box-1{
+        width: 47%;
+    }
+    .main-box .box-2{
+        margin: 0;
+        width: 47%;
+    }
+    .main-box .box-3{
+        margin-top: 20px;
+        display: block;
+        width: 100%;
+        margin: 20px 10px 0;
+    }
+}
+@media (max-width: 767px){
+    .inner-main-boxe{
+    }
+    .main-box .box-1{
+        width: 100%;
+        margin: 20px 10px 0;
+    }
+    .main-box .box-2{
+        margin: 0;
+        width: 100%;
+        margin: 20px 10px 0;
+    }
+    .main-box .box-3{
+        margin-top: 20px;
+        display: block;
+        width: 100%;
+        margin: 20px 10px 0;
+    }
+}
